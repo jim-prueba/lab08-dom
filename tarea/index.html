@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gestor de Tareas</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        max-width: 500px;
+        margin: 40px auto;
+      }
+      .completada {
+        text-decoration: line-through;
+        color: gray;
+      }
+      .error {
+        color: red;
+        font-weight: bold;
+      }
+      li {
+        margin-bottom: 8px;
+      }
+      button {
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Mi Gestor de Tareas</h1>
+    <form id="formTarea">
+      <input
+        id="txtTarea"
+        type="text"
+        placeholder="Nueva tarea (min. 3 letras)"
+      />
+      <button type="submit">Agregar</button>
+    </form>
+    <p id="msgError"></p>
+
+    <h3>Lista de Pendientes</h3>
+    <ul id="listaTareas"></ul>
+
+    <script src="app.js"></script>
+  </body>
+</html>
